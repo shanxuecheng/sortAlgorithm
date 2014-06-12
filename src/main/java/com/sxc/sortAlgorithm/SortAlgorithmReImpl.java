@@ -50,9 +50,11 @@ public class SortAlgorithmReImpl {
 				if(c[j] < c[min]) 
 					min = j;
 			}
-			int temp = c[i];
-			c[i] = c[min];
-			c[min] = temp;
+			if(min != i) {
+				int temp = c[i];
+				c[i] = c[min];
+				c[min] = temp;
+			}
 		}
 		System.out.println(Arrays.asList(c));
 		
