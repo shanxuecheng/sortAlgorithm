@@ -42,7 +42,7 @@ public class SortAlgorithmReImpl {
 		System.out.println(Arrays.asList(b));
 		
 		//select
-		Integer c[] = {3, 5, 2, 1, 4};
+		Integer c[] = {3, 1, 2, 5, 4};
 		int cl = c.length;
 		for(int i=0; i<cl-1; i++) {
 			int min = i;
@@ -59,7 +59,7 @@ public class SortAlgorithmReImpl {
 		System.out.println(Arrays.asList(c));
 		
 		//quick1
-		Integer d[] = {3, 2, 1, 5, 4};
+		Integer d[] = {3, 4, 1, 5, 2};
 		quickSort1(d, 0, 4);
 		System.out.println(Arrays.asList(d));
 		
